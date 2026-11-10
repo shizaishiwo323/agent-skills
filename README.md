@@ -1,6 +1,6 @@
 # Agent Skills
 
-个人智能体 skills 总览，共收录 15 项，按用途分为 6 类。适用于 Claude Code 和 Codex。
+个人智能体 skills 总览，共收录 14 项，按用途分为 6 类。适用于 Claude Code 和 Codex。
 
 本仓库以索引为主：每个 skill 的内容仍在各自的仓库中维护，这里只记录用途、触发场景和链接。
 
@@ -16,13 +16,12 @@
 
 ## [科研写作](01-scientific-writing/README.md)
 
-英文论文的结构诊断、翻译、润色。三者粒度不同：`agu-writing-workflow` 管全文故事线和机制链，`sci-writing-expert` 管翻译和章节修改，`academic-sentence-polisher` 只动句子。
+英文论文的结构诊断、翻译、润色。两者粒度不同：`agu-writing-workflow` 管全文故事线和机制链，`sci-writing-expert` 管翻译、章节修改和句子润色。
 
 | Skill | 用途 | 触发场景 | 类型 |
 | --- | --- | --- | --- |
 | [agu-writing-workflow](https://github.com/shizaishiwo323/agu-writing-workflow-skill) | 面向 AGU 系期刊（GRL、JGR、WRR、JGR: Solid Earth 等）的论文写作流程，按“故事线 > 结构 > 前后呼应 > 机制 > 段落 > 句子 > 用词”的顺序诊断和修改。 | 论文故事线不稳；Introduction 与 Results 前后呼应、铺垫与兑现；Results 小节衔接；机制驱动型地学论文；反应输运、多孔介质、水文地球物理、NMR 论文。 | 独立仓库 |
 | [sci-writing-expert](https://github.com/shizaishiwo323/sci-writing-expert-skill) | 把 SCI 稿件翻译、润色、诊断、重排成自然且符合发表习惯的英文，不改变科学含义和证据强度，不虚构数据、引用或机制。 | 中译英；句段润色；逻辑和衔接修复；IMRaD 章节修改；摘要和标题；全文审查；去除 AI 味的自造复合词。 | 独立仓库 |
-| [academic-sentence-polisher](https://github.com/shizaishiwo323/academic-sentence-polisher) | 只做句子层面的学术润色，保留原有含义、证据强度、引用、公式、图号和段落顺序，不动论文结构。 | 降低 AI 感；简化论文句子；解释含糊术语；去掉无依据的夸大；处理连字符和破折号复合词。 | 独立仓库 |
 
 ## [文献检索与阅读](02-literature-reading/README.md)
 
