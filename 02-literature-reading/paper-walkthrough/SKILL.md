@@ -123,7 +123,11 @@ description: 对学术论文做"逐段逻辑梳理":按原文顺序,章→节→
 
 图片必须来自用户上传的原文件,不能自己重画或用文字代替。按文件类型:
 
-- **PDF**:运行本技能目录下的 `scripts/extract_figures.py`(用完整路径调用;需要 PyMuPDF:`pip install pymupdf`)。
+- **先检查环境**(PDF 和 Word 都要用到脚本,开始截图前做一次):
+  1. 运行 `python -c "import fitz; print(fitz.version)"`(Windows 上 `python` 不可用时试 `py`,macOS/Linux 试 `python3`)。
+  2. 报 `ModuleNotFoundError` 就运行 `python -m pip install pymupdf`,装好后再检查一次。
+  3. 机器上没有 Python,或安装失败(无网络、权限不足),就停下来告诉用户原因和需要执行的命令,不要改用文字描述代替截图。
+- **PDF**:运行本技能目录下的 `scripts/extract_figures.py`(用完整路径调用)。
   1. `python scripts/extract_figures.py scan 论文.pdf 输出目录/figures`:自动识别图注和表注,裁出每张图和表,生成 `manifest.json`(图号、页码、裁剪框、图注原文)。
   2. **逐张打开裁出的 PNG 核对。** 自动裁剪只是初稿。检查:图是否完整(panel、坐标轴、图例、色标都在),有没有混进正文,有没有漏图。标为 `fallback` 的项必须重点检查。
   3. 不准的,用 `page 论文.pdf 输出目录/pages --pages 页码 --grid` 渲染带 50pt 网格的整页,读出坐标,再用 `crop 论文.pdf 页码 x0 y0 x1 y1 输出目录/figures/Fig_3.png` 手动重裁。扫描版 PDF 没有文字层,自动识别会失败,直接用 page + crop。
