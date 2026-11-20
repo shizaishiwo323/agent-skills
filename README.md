@@ -31,6 +31,7 @@
 | --- | --- | --- | --- |
 | [researching-academic-literature](https://github.com/shizaishiwo323/researching-academic-literature) | 查找、逐篇核实、筛选和组织真实且高相关的学术文献，用于支撑论文写作。 | 为研究主题、论文章节、实验、模型、理论、综述、方法对比、讨论部分找文献，或加强参考文献列表。 | 独立仓库 |
 | [paper-walkthrough](02-literature-reading/paper-walkthrough/) | 按原文顺序对论文做章、节、段三级拆解，每段写出“核心内容 → 作用”，完整保留公式、数值、图表编号、引文、假设和局限。 | 论文梳理、逐段精读、整理逻辑骨架、“这篇论文每段在说什么”。只要几句话的摘要时不适用。 | 本仓库收录 |
+| [paper-background-check](02-literature-reading/paper-background-check/) | 查论文的期刊等级（JCR、Scopus 百分位、中科院/新锐分区）、影响因子，以及通讯作者、一二三作、团队方向和近 5 年发文，每项标来源和版本。 | 想知道一篇论文发在几区、影响因子多少、出自哪个团队。 | 本仓库收录 |
 
 ## [图件、图像与演示](03-figures-and-slides/README.md)
 

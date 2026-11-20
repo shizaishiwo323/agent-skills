@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: acc-nanoscale-2010
+expected_outcome: |
+  A Chinese report on the Nanoscale 2010 paper by Rodriguez-Blanco, Shaw and Benning:
+  journal tiers with versions and sources (JCR, Scopus CiteScore percentile, CAS/Xinrui partitions),
+  impact factor with JCR year or an explicit "not verified", corresponding author from the PDF,
+  each of the three authors with affiliation at publication vs now, team research directions,
+  and per-year publication counts for the last 5 years with 3-5 representative papers.
+context:
+  scaffold_script: place-files.sh

@@ -35,3 +35,19 @@
 **依赖：** 逐段梳理和全文骨架无需额外环境。图表截图需要 Python 3 和 PyMuPDF（`pip install pymupdf`）；智能体在截图前会先检查，缺少时自动安装。
 
 **链接：** [paper-walkthrough](paper-walkthrough/)
+
+## paper-background-check
+
+**来源类型：** 本仓库收录
+
+**用途：** 查一篇论文的“出身”：期刊等级（JCR 分区、Scopus CiteScore 分区与百分位、中科院分区/新锐分区）、影响因子，以及通讯作者、一二三作的单位与身份、团队研究方向和近 5 年发文。
+
+**何时使用：** 上传论文后想先了解期刊几区、影响因子多少、作者是谁、团队做什么方向。
+
+**输入：** 论文 PDF，或 DOI / 题目。
+
+**输出：** 在对话中直接输出的背景报告，每项数据标明来源和版本；查不到或只有二手来源的项会注明“待核实”。
+
+**依赖：** Python 3（只用标准库）。`scripts/lookup.py` 从 LetPub 读期刊分区（自动剔除页面里的隐藏干扰值），从 OpenAlex 读作者与发文数据；官方 IF 和 JCR 分区需联网搜索补查。
+
+**链接：** [paper-background-check](paper-background-check/)
