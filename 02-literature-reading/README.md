@@ -30,6 +30,8 @@
 
 **输出：** 在对话中直接输出的逐段梳理，结尾附全文逻辑主线和全文骨架（章节结构 + 每段的概括与作用）。之后询问是否梳理图表；同意则生成一份 Markdown 文档：图片从原文件截取（附 `scripts/extract_figures.py`，支持 PDF 和 Word），表格重建为 Markdown 表格。
 
+**模式：** 默认完整梳理（逐段 + 骨架，结尾询问图表）；说“只梳理骨架”只输出骨架；说“只梳理图表/图片”只输出图表梳理。
+
 **依赖：** 逐段梳理和全文骨架无需额外环境。图表截图需要 Python 3 和 PyMuPDF（`pip install pymupdf`）；智能体在截图前会先检查，缺少时自动安装。
 
 **链接：** [paper-walkthrough](paper-walkthrough/)
